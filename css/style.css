@@ -1,0 +1,202 @@
+/* Variáveis CSS */
+:root {
+  --color-primary: #004aff;
+  --color-white: #ffffff;
+  --font-family: "Poppins", sans-serif;
+  --font-size-xs: 14px;
+  --font-weight-regular: 400;
+}
+
+/* Reset e Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: normal;
+}
+
+/* Header */
+.header {
+  background-color: var(--color-primary);
+  height: 62px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header__container {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo */
+.header__logo {
+  flex-shrink: 0;
+}
+
+.header__logo-image {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+/* Menu Desktop */
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px; /* var(--radius-100, 16px) */
+  list-style: none;
+  margin: 0;
+  padding: 0 40px;
+}
+
+.header__link {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  transition: opacity 0.3s ease;
+  padding: 8px 0;
+}
+
+.header__link:hover,
+.header__link:focus {
+  opacity: 0.8;
+  outline: none;
+}
+
+/* Usuário */
+.header__user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.header__user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header__user-name {
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+}
+
+/* Menu Hamburger (Mobile - Escondido por padrão) */
+.header__hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  gap: 3px;
+}
+
+.header__hamburger-line {
+  width: 20px;
+  height: 2px;
+  background-color: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+/* Menu Mobile (Escondido por padrão) */
+.header__mobile-nav {
+    display: none;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header__mobile-menu {
+    list-style: none;
+    padding: 20px;
+}
+
+.header__mobile-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header__mobile-item:last-child {
+    border-bottom: none;
+}
+
+.header__mobile-link {
+    display: block;
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: var(--font-size-xs);
+    transition: opacity 0.3s ease;
+}
+
+.header__mobile-link:hover,
+.header__mobile-link:focus {
+    opacity: 0.8;
+}
+
+/* Usuário no Mobile - NOVO */
+.header__mobile-user {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header__mobile-user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header__mobile-user-name {
+    color: var(--color-white);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-regular);
+}
+
+/* Estados para menu mobile ativo */
+.header__mobile-nav--active {
+  display: block;
+}
+
+.header__hamburger--active .header__hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.header__hamburger--active .header__hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.header__hamburger--active .header__hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}

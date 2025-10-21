@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teste Prático WebDesign</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-    <h1>teste</h1>
-    <h2>teste2</h2>
-    <h2>teste3</h2>
-    <h2>teste4</h2>
-</body>
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+      description="Styles for the main layout"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/responsive.css"
+      description="Styles for the responsive layout"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <!-- Logo -->
+        <div class="header__logo">
+          <img
+            src="assets/logo-simbolo-gelo.svg"
+            alt="EAD Unifor - Logo"
+            class="header__logo-image"
+          />
+        </div>
+
+        <!-- Menu Desktop -->
+        <nav class="header__nav" aria-label="Navegação principal">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a href="#" class="header__link">EAD Unifor</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Minhas Disciplinas</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Biblioteca</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Tutorial</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Usuário -->
+        <div class="header__user">
+          <span class="header__user-name">Estudante</span>
+          <img
+            src="assets/avatar.png"
+            alt="Foto do estudante"
+            class="header__user-avatar"
+          />
+        </div>
+
+        <!-- Menu Hamburger Mobile -->
+        <button
+          class="header__hamburger"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <span class="header__hamburger-line"></span>
+          <span class="header__hamburger-line"></span>
+          <span class="header__hamburger-line"></span>
+        </button>
+      </div>
+
+      <!-- Menu Mobile -->
+      <nav class="header__mobile-nav" aria-label="Navegação mobile">
+        <!-- Usuário no Mobile - NOVO -->
+        <div class="header__mobile-user">
+          <img
+            src="assets/avatar.png"
+            alt="Foto do estudante"
+            class="header__mobile-user-avatar"
+          />
+          <span class="header__mobile-user-name">Estudante</span>
+        </div>
+
+        <ul class="header__mobile-menu">
+          <li class="header__mobile-item">
+            <a href="#" class="header__mobile-link">EAD Unifor</a>
+          </li>
+          <li class="header__mobile-item">
+            <a href="#" class="header__mobile-link">Minhas Disciplinas</a>
+          </li>
+          <li class="header__mobile-item">
+            <a href="#" class="header__mobile-link">Biblioteca</a>
+          </li>
+          <li class="header__mobile-item">
+            <a href="#" class="header__mobile-link">Tutorial</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

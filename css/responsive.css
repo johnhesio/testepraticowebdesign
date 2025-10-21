@@ -1,0 +1,62 @@
+/* Tablet */
+@media (max-width: 1024px) {
+  .header__container {
+    padding: 0 16px;
+  }
+
+  .header__menu {
+    gap: 16px; /* Mantém o mesmo gap */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header__container {
+    padding: 0 12px;
+  }
+
+  /* Esconde menu desktop e usuário desktop */
+  .header__nav,
+  .header__user {
+    display: none;
+  }
+
+  /* Mostra hamburger */
+  .header__hamburger {
+    display: flex;
+  }
+
+  /* Mostra usuário no mobile quando menu abrir */
+  .header__mobile-nav--active .header__mobile-user {
+    display: flex;
+  }
+
+  /* Ajusta logo */
+  .header__logo-image {
+    height: 28px;
+  }
+
+  /* Menu mobile ativo */
+  .header__mobile-nav--active {
+    display: block;
+  }
+}
+
+/* Mobile Pequeno */
+@media (max-width: 480px) {
+  .header__container {
+    padding: 0 8px;
+  }
+
+  .header__logo-image {
+    height: 24px;
+  }
+
+  .header__mobile-menu {
+    padding: 16px;
+  }
+
+  .header__mobile-link {
+    padding: 10px 0;
+  }
+}
