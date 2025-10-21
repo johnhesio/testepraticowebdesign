@@ -60,3 +60,85 @@
     padding: 10px 0;
   }
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .head-moodle__container {
+    padding: 32px 16px 0;
+  }
+
+  .head-moodle__title-section {
+    width: 100%;
+    max-width: 842.746px;
+  }
+
+  .head-moodle__submenu {
+    width: 100%;
+    max-width: 420.372px;
+    gap: 12px;
+  }
+
+  .head-moodle__divider {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .head-moodle {
+    height: auto;
+    min-height: 120px;
+  }
+
+  .head-moodle__container {
+    padding: 24px 12px 0;
+    gap: 20px;
+  }
+
+  .head-moodle__title-section {
+    width: 100%;
+  }
+
+  .head-moodle__title {
+    font-size: 24px;
+  }
+
+  .head-moodle__submenu {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+  }
+
+  .head-moodle__link {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.28px;
+  }
+
+  .head-moodle__divider {
+    max-width: 100%;
+  }
+}
+
+/* Mobile Pequeno */
+@media (max-width: 480px) {
+  .head-moodle__container {
+    padding: 20px 8px 0;
+    gap: 16px;
+  }
+
+  .head-moodle__title {
+    font-size: 20px;
+  }
+
+  .head-moodle__submenu {
+    gap: 12px 8px;
+  }
+
+  .head-moodle__link {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.26px;
+  }
+}
