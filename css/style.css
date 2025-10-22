@@ -578,108 +578,292 @@ body {
 
 /* Seção Videoaula */
 .video-section {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.video-section__container {
+  width: 766px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-section__title {
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  height: 13px;
+}
+
+/* Card do Vídeo */
+.video-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.video-card__thumbnail {
+  width: 720px;
+  height: 405px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.video-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 720px;
+}
+
+.video-card__title {
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  margin: 0;
+  height: 27px;
+}
+
+.video-card__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.video-card__duration {
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  height: 21px;
+}
+
+.video-card__libras {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.video-card__libras-icon {
+  width: 16px;
+  height: 16.73px;
+  flex-shrink: 0;
+}
+
+.video-card__libras-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.video-card__libras-text {
+  color: #1529ff;
+  font-family: var(--font-family);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: normal;
+  height: 11px;
+}
+
+/* Seção Representação Simbólica */
+.representation {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.representation__container {
+  width: 766px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.representation__title {
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.representation__text {
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+}
+
+/* Seção Pseudocódigo */
+.pseudocode {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pseudocode__container {
+  width: 766px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pseudocode__title {
+  color: #004af7;
+  font-family: var(--font-family);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.pseudocode__text {
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+}
+
+/* Seção Exemplo Pseudocódigo */
+.pseudocode-example {
     width: 100%;
     margin: 40px 0;
     display: flex;
     justify-content: center;
 }
 
-.video-section__container {
+.pseudocode-example__container {
     width: 766px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.video-section__title {
-    color: #151720;
-    font-family: var(--font-family);
-    font-size: 13px;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0;
-    height: 13px;
-}
-
-/* Card do Vídeo */
-.video-card {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-}
-
-.video-card__thumbnail {
-    width: 720px;
-    height: 405px;
-    border-radius: 6px;
-    overflow: hidden;
-}
-
-.video-card__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.video-card__info {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 720px;
-}
-
-.video-card__title {
-    color: #151720;
-    font-family: var(--font-family);
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 27px;
-    margin: 0;
-    height: 27px;
-}
-
-.video-card__details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.video-card__duration {
+.pseudocode-example__text {
     color: #151720;
     font-family: var(--font-family);
     font-size: 16px;
     font-weight: 400;
-    line-height: 21px;
-    height: 21px;
+    line-height: 150%;
+    margin: 0;
 }
 
-.video-card__libras {
+.pseudocode-example__code {
+    border: 1px solid #1529FF;
+    border-radius: 8px;
+    padding: 24px;
+    background: #F8F9FF;
+}
+
+.pseudocode-example__pre {
+    color: #151720;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.pseudocode-example__pre strong {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Seção Fluxogramas */
+.flowcharts {
+    width: 100%;
+    margin: 40px 0;
     display: flex;
+    justify-content: center;
+}
+
+.flowcharts__container {
+    width: 766px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flowcharts__title {
+    color: #004AF7;
+    font-family: var(--font-family);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.flowcharts__text {
+    color: #151720;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+}
+
+.flowcharts__table-title {
+    color: #151720;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+}
+
+.flowcharts__image {
+    width: 766px;
+    height: 327.78px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 8px;
 }
 
-.video-card__libras-icon {
-    width: 16px;
-    height: 16.73px;
-    flex-shrink: 0;
-}
-
-.video-card__libras-img {
+.flowcharts__img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    display: block;
 }
 
-.video-card__libras-text {
-    color: #1529FF;
+.flowcharts__source {
+    color: #151720;
     font-family: var(--font-family);
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 400;
     line-height: normal;
-    height: 11px;
+    margin: 0;
+    text-align: center;
 }
