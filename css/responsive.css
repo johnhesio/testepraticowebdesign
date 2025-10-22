@@ -1331,3 +1331,90 @@
   }
 }
 
+/* ===== MÉTODOS DE ENTRADA E SAÍDA ===== */
+
+/* Responsividade Tablet Conteúdo */
+@media (max-width: 1024px) {
+  .methods {
+    margin: 32px 0;
+  }
+
+  .methods__container {
+    width: 100%;
+    max-width: 766px;
+  }
+
+  .methods__title {
+    font-size: 28px;
+  }
+
+  .methods__container {
+    gap: 28px;
+  }
+}
+
+/* Responsividade Mobile Conteúdo */
+@media (max-width: 768px) {
+  .methods {
+    margin: 24px 0;
+  }
+
+  .methods__container {
+    gap: 24px;
+  }
+
+  .methods__section {
+    gap: 14px;
+  }
+
+  .methods__title {
+    font-size: 24px;
+  }
+
+  .methods__text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .methods__item {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .methods__list {
+    gap: 10px;
+  }
+}
+
+/* Responsividade Mobile Pequeno Conteúdo */
+@media (max-width: 480px) {
+  .methods {
+    margin: 20px 0;
+  }
+
+  .methods__container {
+    gap: 20px;
+  }
+
+  .methods__section {
+    gap: 12px;
+  }
+
+  .methods__title {
+    font-size: 22px;
+  }
+
+  .methods__text {
+    font-size: 13px;
+    line-height: 135%;
+  }
+
+  .methods__item {
+    font-size: 13px;
+    line-height: 135%;
+  }
+
+  .methods__list {
+    gap: 8px;
+  }
+}
