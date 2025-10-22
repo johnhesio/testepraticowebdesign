@@ -591,6 +591,7 @@
     
     .video-card__info {
         gap: 10px;
+        width: 100%;
     }
     
     .video-card__title {

@@ -607,6 +607,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    align-items: center;
 }
 
 .video-card__thumbnail {
@@ -627,6 +628,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    width: 720px;
 }
 
 .video-card__title {
