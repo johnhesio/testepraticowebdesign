@@ -1746,3 +1746,174 @@
     gap: 8px;
   }
 }
+
+/* ===== MATERIAL COMPLEMENTAR ===== */
+
+/* Responsividade Tablet Conteúdo */
+@media (max-width: 1024px) {
+  .complementary {
+    margin: 32px 0;
+  }
+
+  .complementary__container {
+    width: 100%;
+    max-width: 766px;
+  }
+
+  .complementary__title {
+    font-size: 26px;
+    line-height: 30px;
+    height: auto;
+  }
+
+  .carousel__container {
+    gap: 16px;
+  }
+
+  .carousel__card {
+    width: 31%;
+    min-width: 200px;
+  }
+}
+
+/* Responsividade Mobile Conteúdo */
+@media (max-width: 768px) {
+  .complementary {
+    margin: 24px 0;
+  }
+
+  .complementary__container {
+    gap: 20px;
+  }
+
+  .complementary__header {
+    gap: 10px;
+  }
+
+  .complementary__icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .complementary__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .complementary__description {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .carousel__container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .carousel__card {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    min-height: 120px;
+  }
+
+  .carousel__link {
+    font-size: 16px;
+    line-height: 24px;
+    height: auto;
+    -webkit-line-clamp: 2;
+  }
+
+  .carousel__indicator-img {
+    width: 300px;
+  }
+
+  .complementary__final {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+
+/* Responsividade Mobile Pequeno Conteúdo */
+@media (max-width: 480px) {
+  .complementary {
+    margin: 20px 0;
+  }
+
+  .complementary__container {
+    gap: 16px;
+  }
+
+  .complementary__header {
+    gap: 8px;
+  }
+
+  .complementary__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .complementary__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .complementary__description {
+    font-size: 13px;
+    line-height: 135%;
+  }
+
+  .carousel__header {
+    justify-content: center;
+  }
+
+  .carousel__navigation {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .carousel__arrow {
+    width: 36px;
+    height: 22px;
+  }
+
+  .carousel__container {
+    gap: 12px;
+  }
+
+  .carousel__card {
+    padding: 10px;
+    min-height: 110px;
+  }
+
+  .carousel__tag {
+    width: 70px;
+    height: 22px;
+    padding: 3px 10px;
+  }
+
+  .carousel__tag-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .carousel__tag-text {
+    font-size: 12px;
+    line-height: 14px;
+    height: auto;
+  }
+
+  .carousel__link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .carousel__indicator-img {
+    width: 300px;
+  }
+
+  .complementary__final {
+    font-size: 13px;
+    line-height: 135%;
+  }
+}

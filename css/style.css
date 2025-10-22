@@ -1628,3 +1628,202 @@ body {
   margin: 0;
   padding-top: 25px;
 }
+
+/* Seção Material Complementar */
+.complementary {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.complementary__container {
+    width: 766px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Cabeçalho */
+.complementary__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.complementary__icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.complementary__icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.complementary__title {
+    color: #151720;
+    font-family: var(--font-family);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0;
+    height: 32px;
+}
+
+.complementary__description {
+    color: #151720;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+}
+
+/* Carrossel */
+.carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carousel__header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carousel__navigation {
+    display: flex;
+    gap: 8px;
+}
+
+.carousel__arrow {
+    width: 40px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.carousel__arrow:hover {
+    opacity: 0.7;
+}
+
+.carousel__arrow-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Container dos Cards */
+.carousel__container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Card */
+.carousel__card {
+    border: 1px solid #1529FF;
+    width: 30%;
+    min-width: 250px;
+    max-width: 395px;
+    height: 142px;
+    min-height: 142px;
+    max-height: 295px;
+    border-radius: 4px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.carousel__tag {
+    background: #EBEDF3;
+    width: 77px;
+    height: 25px;
+    border-radius: 2px;
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel__tag-content {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.carousel__tag-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.carousel__tag-icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carousel__tag-text {
+    color: #1529FF;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    height: 16px;
+}
+
+.carousel__link {
+    color: #151720;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-decoration: underline;
+    margin: 0;
+    height: 27px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    transition: color 0.3s ease;
+}
+
+.carousel__link:hover {
+    color: #1529FF;
+}
+
+/* Indicador do Carrossel */
+.carousel__indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__indicator-img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Mensagem Final */
+.complementary__final {
+    color: #151720;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    text-align: center;
+}
