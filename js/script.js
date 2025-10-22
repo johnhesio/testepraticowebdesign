@@ -76,3 +76,56 @@ class HeaderMobile {
 document.addEventListener("DOMContentLoaded", () => {
   new HeaderMobile();
 });
+
+// Toggles do Resumo do Percurso
+class SummaryToggles {
+  constructor() {
+    this.toggleHeaders = document.querySelectorAll(".summary__toggle-header");
+    this.init();
+  }
+
+  init() {
+    this.toggleHeaders.forEach((header) => {
+      header.addEventListener("click", () => this.toggleSection(header));
+      header.addEventListener("keydown", (e) => this.handleKeydown(e, header));
+    });
+  }
+
+  toggleSection(header) {
+    const content = document.getElementById(
+      header.getAttribute("aria-controls")
+    );
+    const isExpanded = header.getAttribute("aria-expanded") === "true";
+    const icon = header.querySelector(".summary__toggle-icon-img");
+
+    // Alterna estado
+    header.setAttribute("aria-expanded", !isExpanded);
+
+    if (isExpanded) {
+      // Fecha
+      content.classList.add("summary__toggle-content--hidden");
+      icon.src = "assets/icon-minus.svg";
+      icon.alt = "Expandir";
+    } else {
+      // Abre
+      content.classList.remove("summary__toggle-content--hidden");
+      icon.src = "assets/icon-minus.svg";
+      icon.alt = "Recolher";
+    }
+  }
+
+  handleKeydown(event, header) {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      this.toggleSection(header);
+    }
+  }
+}
+
+// Inicializar quando DOM estiver pronto
+document.addEventListener("DOMContentLoaded", () => {
+  // ... código anterior do header mobile ...
+
+  // Inicializar toggles do resumo
+  new SummaryToggles();
+});
