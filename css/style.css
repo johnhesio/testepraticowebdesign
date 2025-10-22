@@ -203,102 +203,177 @@ body {
 
 /* Head Moodle Section */
 .head-moodle {
-    width: 100%;
-    height: 200px;
-    flex-shrink: 0;
-    background: var(--color-white);
-    margin-top: 62px; /* Compensação do header fixo */
+  width: 100%;
+  height: 200px;
+  flex-shrink: 0;
+  background: var(--color-white);
+  margin-top: 62px; /* Compensação do header fixo */
 }
 
 .head-moodle__container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 40px 20px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 /* Título Principal */
 .head-moodle__title-section {
-    display: flex;
-    width: 842.746px;
-    min-width: 200px;
-    align-items: center;
-    align-content: center;
-    gap: 8px;
-    flex-wrap: wrap;
+  display: flex;
+  width: 842.746px;
+  min-width: 200px;
+  align-items: center;
+  align-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .head-moodle__title {
-    color: #151720;
-    font-family: var(--font-family);
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin: 0;
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
 }
 
 /* Sub Menu */
 .head-moodle__subnav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .head-moodle__submenu {
-    display: flex;
-    width: 420.372px;
-    align-items: center;
-    gap: 16px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  width: 420.372px;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .head-moodle__link {
-    color: var(--color-primary);
-    font-family: var(--font-family);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -0.32px;
-    text-decoration: none;
-    padding: 8px 0;
-    transition: all 0.3s ease;
-    position: relative;
+  color: var(--color-primary);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  text-decoration: none;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .head-moodle__link:hover,
 .head-moodle__link:focus {
-    opacity: 0.8;
-    outline: none;
+  opacity: 0.8;
+  outline: none;
 }
 
 .head-moodle__link--active {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .head-moodle__link--active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-primary);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary);
 }
 
 /* Divider */
 .head-moodle__divider {
-    width: 100%;
-    max-width: 1340.186px;
-    height: 0;
-    flex-shrink: 0;
+  width: 100%;
+  max-width: 1340.186px;
+  height: 0;
+  flex-shrink: 0;
 }
 
 .head-moodle__divider-line {
-    width: 100%;
-    height: 2px;
+  width: 100%;
+  height: 2px;
+}
+/* Content Section */
+.content {
+  width: 100%;
+  padding: 40px 20px;
+  background: var(--color-white);
+}
+
+.content__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.content__wrapper {
+  width: 766px;
+  max-width: 100%;
+  background-color: var(--color-white);
+}
+
+/* Content Card */
+.content__card {
+  width: 100%;
+  height: 212px;
+  background:rgb(255, 220, 220);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Badge */
+.content__badge {
+  background: #ebedf3;
+  border-radius: 4px;
+  padding: 4px 12px;
+  margin-bottom: 16px;
+}
+
+.content__badge-text {
+  color: #1529ff;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.28px;
+}
+
+/* Título Principal */
+.content__title {
+  color: #004af7;
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 0 8px 0;
+  max-width: 600px;
+}
+
+/* Descrição */
+.content__description {
+  color: #30354a;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  max-width: 500px;
 }

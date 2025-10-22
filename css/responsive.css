@@ -1,48 +1,45 @@
-/* Tablet */
+/* ===== HEADER ===== */
+
+/* Responsividade Tablet Header */
 @media (max-width: 1024px) {
   .header__container {
     padding: 0 16px;
   }
 
   .header__menu {
-    gap: 16px; /* Mantém o mesmo gap */
+    gap: 16px;
   }
 }
 
-/* Mobile */
+/* Responsividade Mobile Header */
 @media (max-width: 768px) {
   .header__container {
     padding: 0 12px;
   }
 
-  /* Esconde menu desktop e usuário desktop */
   .header__nav,
   .header__user {
     display: none;
   }
 
-  /* Mostra hamburger */
   .header__hamburger {
     display: flex;
   }
 
-  /* Mostra usuário no mobile quando menu abrir */
   .header__mobile-nav--active .header__mobile-user {
     display: flex;
   }
 
-  /* Ajusta logo */
   .header__logo-image {
     height: 28px;
   }
 
-  /* Menu mobile ativo */
   .header__mobile-nav--active {
     display: block;
   }
 }
 
-/* Mobile Pequeno */
+/* Responsividade Mobile Pequeno Header */
 @media (max-width: 480px) {
   .header__container {
     padding: 0 8px;
@@ -61,7 +58,9 @@
   }
 }
 
-/* Tablet */
+/* ===== HEAD-MOODLE ===== */
+
+/* Responsividade Tablet Head-Moodle */
 @media (max-width: 1024px) {
   .head-moodle__container {
     padding: 32px 16px 0;
@@ -83,11 +82,11 @@
   }
 }
 
-/* Mobile */
+/* Responsividade Mobile Head-Moodle */
 @media (max-width: 768px) {
   .head-moodle {
     height: auto;
-    min-height: 120px;
+    min-height: 150px;
   }
 
   .head-moodle__container {
@@ -121,7 +120,7 @@
   }
 }
 
-/* Mobile Pequeno */
+/* Responsividade Mobile Pequeno Head-Moodle */
 @media (max-width: 480px) {
   .head-moodle__container {
     padding: 20px 8px 0;
@@ -140,5 +139,84 @@
     font-size: 13px;
     line-height: 18px;
     letter-spacing: -0.26px;
+  }
+}
+
+/* ===== CONTEÚDO ===== */
+
+/* Responsividade Tablet Conteúdo */
+@media (max-width: 1024px) {
+  .content {
+    padding: 32px 16px;
+  }
+
+  .content__wrapper {
+    width: 100%;
+    max-width: 766px;
+  }
+
+  .content__card {
+    height: auto;
+    min-height: 200px;
+    padding: 20px;
+  }
+
+  .content__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+/* Responsividade Mobile Conteúdo */
+@media (max-width: 768px) {
+  .content {
+    padding: 24px 12px;
+  }
+
+  .content__wrapper {
+    width: 100%;
+  }
+
+  .content__card {
+    height: auto;
+    min-height: 180px;
+    padding: 16px;
+  }
+
+  .content__badge {
+    margin-bottom: 12px;
+  }
+
+  .content__title {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 6px;
+  }
+
+  .content__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+/* Responsividade Mobile Pequeno Conteúdo */
+@media (max-width: 480px) {
+  .content {
+    padding: 20px 8px;
+  }
+
+  .content__card {
+    padding: 12px;
+    min-height: 160px;
+  }
+
+  .content__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .content__description {
+    font-size: 13px;
+    line-height: 18px;
   }
 }
