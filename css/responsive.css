@@ -1821,7 +1821,7 @@
     font-size: 16px;
     line-height: 24px;
     height: auto;
-    -webkit-line-clamp: 2;
+    
   }
 
   .carousel__indicator-img {
