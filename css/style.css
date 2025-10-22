@@ -326,7 +326,7 @@ body {
 .content__card {
   width: 100%;
   height: 212px;
-  background: rgb(255, 220, 220);
+  background: var(--color-white);
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -479,4 +479,100 @@ body {
 
 .objectives__text strong {
   font-weight: 700;
+}
+/* Seção Conceitos */
+.concepts {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.concepts__container {
+  width: 766px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.concepts__title {
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.concepts__text {
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+}
+
+/* Seção Importante */
+.important {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.important__container {
+    background: #FEF3C7;
+    width: 766px;
+    height: 200px;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.important__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.important__icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.important__icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.important__title {
+    color: #1529FF;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+    height: 24px;
+}
+
+.important__content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.important__text {
+    color: #151720;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
 }
