@@ -1201,6 +1201,9 @@
     line-height: 140%;
     text-align: center;
   }
+  .environment__indicator-img {
+    width: 300px;
+  }
 }
 
 /* Responsividade Mobile Pequeno Conteúdo */
@@ -1232,7 +1235,99 @@
     font-size: 13px;
     line-height: 135%;
   }
-  .environment__indicator-img{
+  .environment__indicator-img {
     width: 300px;
   }
 }
+
+/* ===== ENTRADA E SAÍDA DE DADOS ===== */
+
+/* Responsividade Tablet Conteúdo */
+@media (max-width: 1024px) {
+  .data-io {
+    margin: 32px 0;
+  }
+
+  .data-io__container {
+    width: 100%;
+    max-width: 766px;
+  }
+
+  .data-io__title {
+    font-size: 28px;
+  }
+
+  .data-io__image {
+    width: 100%;
+    max-width: 469px;
+    height: auto;
+    aspect-ratio: 469 / 339;
+  }
+}
+
+/* Responsividade Mobile Conteúdo */
+@media (max-width: 768px) {
+  .data-io {
+    margin: 24px 0;
+  }
+
+  .data-io__container {
+    gap: 16px;
+  }
+
+  .data-io__title {
+    font-size: 24px;
+  }
+
+  .data-io__text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .data-io__figure-title {
+    font-size: 16px;
+  }
+
+  .data-io__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .data-io__source {
+    font-size: 13px;
+  }
+}
+
+/* Responsividade Mobile Pequeno Conteúdo */
+@media (max-width: 480px) {
+  .data-io {
+    margin: 20px 0;
+  }
+
+  .data-io__container {
+    gap: 12px;
+  }
+
+  .data-io__title {
+    font-size: 22px;
+  }
+
+  .data-io__text {
+    font-size: 13px;
+    line-height: 135%;
+  }
+
+  .data-io__figure-title {
+    font-size: 15px;
+  }
+
+  .data-io__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .data-io__source {
+    font-size: 12px;
+  }
+}
+
