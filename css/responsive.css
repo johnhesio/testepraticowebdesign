@@ -1418,3 +1418,202 @@
     gap: 8px;
   }
 }
+
+/* ===== MATERIAL DE LEITURA E EXERCÍCIOS ===== */
+
+/* Responsividade Tablet Conteúdo */
+@media (max-width: 1024px) {
+  .materials {
+    margin: 32px 0;
+  }
+
+  .materials__container {
+    width: 100%;
+    max-width: 766px;
+  }
+
+  .materials__link {
+    width: 100%;
+    max-width: 767px;
+  }
+
+  .materials__title {
+    font-size: 26px;
+    line-height: 30px;
+    height: auto;
+  }
+
+  .exercises {
+    padding: 20px;
+  }
+}
+
+/* Responsividade Mobile Conteúdo */
+@media (max-width: 768px) {
+  .materials {
+    margin: 24px 0;
+  }
+
+  .materials__container {
+    gap: 24px;
+  }
+
+  .materials__section {
+    gap: 16px;
+  }
+
+  .materials__header {
+    gap: 10px;
+  }
+
+  .materials__icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .materials__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .materials__description {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .materials__link {
+    height: 48px;
+    padding: 12px;
+  }
+
+  .materials__link-text {
+    font-size: 14px;
+    line-height: 16px;
+    height: auto;
+  }
+
+  .exercises {
+    padding: 16px;
+  }
+
+  .exercises__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .exercises__content {
+    flex: 1;
+    width: 100%;
+  }
+
+  .exercises__link {
+    flex: none;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .exercises__title {
+    font-size: 18px;
+  }
+
+  .exercises__description {
+    font-size: 13px;
+    line-height: 135%;
+  }
+}
+
+/* Responsividade Mobile Pequeno Conteúdo */
+@media (max-width: 480px) {
+  .materials {
+    margin: 20px 0;
+  }
+
+  .materials__container {
+    gap: 20px;
+  }
+
+  .materials__section {
+    gap: 12px;
+  }
+
+  .materials__header {
+    gap: 8px;
+  }
+
+  .materials__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .materials__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .materials__description {
+    font-size: 13px;
+    line-height: 135%;
+  }
+
+  .materials__link {
+    height: 44px;
+    padding: 10px;
+  }
+
+  .materials__link-left {
+    gap: 8px;
+  }
+
+  .materials__link-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .materials__link-text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .materials__link-arrow {
+    width: 16px;
+    height: 16px;
+  }
+
+  .exercises {
+    padding: 12px;
+  }
+
+  .exercises__header {
+    gap: 8px;
+  }
+
+  .exercises__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .exercises__title {
+    font-size: 16px;
+  }
+
+  .exercises__description {
+    font-size: 12px;
+    line-height: 130%;
+  }
+
+  .exercises__link {
+    padding: 10px 12px;
+    max-width: 150px;
+  }
+
+  .exercises__link-text {
+    font-size: 10px;
+    height: auto;
+  }
+
+  .exercises__link-arrow {
+    width: 14px;
+    height: 14px;
+  }
+}
