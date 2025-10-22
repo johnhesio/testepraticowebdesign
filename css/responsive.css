@@ -461,84 +461,203 @@
 
 /* Responsividade Tablet Conteúdo */
 @media (max-width: 1024px) {
-    .important {
+  .important {
+    margin: 32px 0;
+  }
+
+  .important__container {
+    width: 100%;
+    max-width: 766px;
+    height: auto;
+    min-height: 180px;
+  }
+
+  .important__title {
+    font-size: 18px;
+    line-height: 22px;
+    height: auto;
+  }
+}
+
+/* Responsividade Mobile Conteúdo */
+@media (max-width: 768px) {
+  .important {
+    margin: 24px 0;
+  }
+
+  .important__container {
+    padding: 20px;
+    gap: 12px;
+    min-height: 160px;
+  }
+
+  .important__header {
+    gap: 10px;
+  }
+
+  .important__icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .important__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .important__text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+
+/* Responsividade Mobile Pequeno Conteúdo */
+@media (max-width: 480px) {
+  .important {
+    margin: 20px 0;
+  }
+
+  .important__container {
+    padding: 16px;
+    gap: 10px;
+    min-height: 140px;
+  }
+
+  .important__header {
+    gap: 8px;
+  }
+
+  .important__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .important__title {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .important__text {
+    font-size: 13px;
+    line-height: 135%;
+  }
+}
+
+/* ===== VIDEOAULA ===== */
+
+/* Responsividade Tablet Conteúdo */
+@media (max-width: 1024px) {
+    .video-section {
         margin: 32px 0;
     }
     
-    .important__container {
+    .video-section__container {
         width: 100%;
         max-width: 766px;
-        height: auto;
-        min-height: 180px;
     }
     
-    .important__title {
-        font-size: 18px;
-        line-height: 22px;
+    .video-card__thumbnail {
+        width: 100%;
+        max-width: 720px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+    
+    .video-card__title {
+        font-size: 20px;
+        line-height: 25px;
         height: auto;
     }
 }
 
 /* Responsividade Mobile Conteúdo */
 @media (max-width: 768px) {
-    .important {
+    .video-section {
         margin: 24px 0;
     }
     
-    .important__container {
-        padding: 20px;
-        gap: 12px;
-        min-height: 160px;
+    .video-section__container {
+        gap: 16px;
     }
     
-    .important__header {
+    .video-section__title {
+        font-size: 12px;
+        height: auto;
+    }
+    
+    .video-card {
+        gap: 12px;
+    }
+    
+    .video-card__info {
         gap: 10px;
     }
     
-    .important__icon {
-        width: 22px;
-        height: 22px;
+    .video-card__title {
+        font-size: 18px;
+        line-height: 22px;
     }
     
-    .important__title {
-        font-size: 16px;
-        line-height: 20px;
-    }
-    
-    .important__text {
+    .video-card__duration {
         font-size: 14px;
-        line-height: 140%;
+        line-height: 18px;
+        height: auto;
+    }
+    
+    .video-card__libras-text {
+        font-size: 10px;
+        height: auto;
     }
 }
 
 /* Responsividade Mobile Pequeno Conteúdo */
 @media (max-width: 480px) {
-    .important {
+    .video-section {
         margin: 20px 0;
     }
     
-    .important__container {
-        padding: 16px;
-        gap: 10px;
-        min-height: 140px;
+    .video-section__container {
+        gap: 12px;
     }
     
-    .important__header {
+    .video-section__title {
+        font-size: 11px;
+    }
+    
+    .video-card {
+        gap: 10px;
+    }
+    
+    .video-card__info {
         gap: 8px;
     }
     
-    .important__icon {
-        width: 20px;
-        height: 20px;
+    .video-card__title {
+        font-size: 16px;
+        line-height: 20px;
     }
     
-    .important__title {
-        font-size: 15px;
-        line-height: 18px;
+    .video-card__details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
     }
     
-    .important__text {
+    .video-card__duration {
         font-size: 13px;
-        line-height: 135%;
+        line-height: 16px;
+    }
+    
+    .video-card__libras {
+        gap: 6px;
+    }
+    
+    .video-card__libras-icon {
+        width: 14px;
+        height: 14.64px;
+    }
+    
+    .video-card__libras-text {
+        font-size: 9px;
     }
 }
