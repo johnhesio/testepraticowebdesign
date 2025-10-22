@@ -754,116 +754,275 @@ body {
 
 /* Seção Exemplo Pseudocódigo */
 .pseudocode-example {
-    width: 100%;
-    margin: 40px 0;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .pseudocode-example__container {
-    width: 766px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  width: 766px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .pseudocode-example__text {
-    color: #151720;
-    font-family: var(--font-family);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
-    margin: 0;
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
 }
 
 .pseudocode-example__code {
-    border: 1px solid #1529FF;
-    border-radius: 8px;
-    padding: 24px;
-    background: #F8F9FF;
+  border: 1px solid #1529ff;
+  border-radius: 8px;
+  padding: 24px;
+  background: #f8f9ff;
 }
 
 .pseudocode-example__pre {
-    color: #151720;
-    font-family: 'Courier New', monospace;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 160%;
-    margin: 0;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+  color: #151720;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .pseudocode-example__pre strong {
-    color: #000000;
-    font-weight: 600;
+  color: #000000;
+  font-weight: 600;
 }
 
 /* Seção Fluxogramas */
 .flowcharts {
-    width: 100%;
-    margin: 40px 0;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .flowcharts__container {
-    width: 766px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  width: 766px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .flowcharts__title {
-    color: #004AF7;
-    font-family: var(--font-family);
-    font-size: 30px;
-    font-weight: 600;
-    line-height: normal;
-    margin: 0;
-    vertical-align: middle;
+  color: #004af7;
+  font-family: var(--font-family);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  vertical-align: middle;
 }
 
 .flowcharts__text {
-    color: #151720;
-    font-family: var(--font-family);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
-    margin: 0;
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
 }
 
 .flowcharts__table-title {
-    color: #151720;
-    font-family: var(--font-family);
-    font-size: 18px;
-    font-weight: 600;
-    line-height: normal;
-    margin: 0;
-    text-align: center;
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  text-align: center;
 }
 
 .flowcharts__image {
-    width: 766px;
-    height: 327.78px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 766px;
+  height: 327.78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flowcharts__img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .flowcharts__source {
-    color: #151720;
-    font-family: var(--font-family);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0;
-    text-align: center;
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  text-align: center;
+}
+
+/* Seção Exemplo Fluxograma */
+.flowchart-example {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.flowchart-example__container {
+  width: 766px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.flowchart-example__intro {
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.flowchart-example__figure-title {
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  text-align: center;
+}
+
+.flowchart-example__image {
+  width: 316px;
+  height: 548px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flowchart-example__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.flowchart-example__source {
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  text-align: center;
+}
+
+/* Seção Segundo Vídeo */
+.video-section-2 {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.video-section-2__container {
+  width: 766px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card do Segundo Vídeo */
+.video-card-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.video-card-2__thumbnail {
+  width: 720px;
+  height: 405px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.video-card-2__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-card-2__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 720px;
+}
+
+.video-card-2__title {
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  margin: 0;
+  height: 27px;
+}
+
+.video-card-2__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-card-2__duration {
+  color: #151720;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  height: 21px;
+}
+
+.video-card-2__libras {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.video-card-2__libras-icon {
+  width: 16px;
+  height: 16.73px;
+  flex-shrink: 0;
+}
+
+.video-card-2__libras-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.video-card-2__libras-text {
+  color: #1529ff;
+  font-family: var(--font-family);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: normal;
+  height: 11px;
 }
